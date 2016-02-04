@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Neuron2 {
+public class Neuron {
 	float[] weights;
-	NeuralNetwork2 parent;
+	NeuralNetwork parent;
 	int numInputs;
 	int outputType;
 	// Use this for initialization
 
-	public Neuron2(NeuralNetwork2 parent, int numInputs, int outputType) { //This is called in the first generation to set it up randomly
+	public Neuron(NeuralNetwork parent, int numInputs, int outputType) { //This is called in the first generation to set it up randomly
 		this.parent = parent;
 		weights = new float[numInputs + 1];//The last weight will be the threshold
 		for (int i = 0; i < weights.Length; i++) {
@@ -18,13 +18,13 @@ public class Neuron2 {
 		this.numInputs = numInputs;
 	}
 	
-	public Neuron2(float[] weights, int outputType) { //In subsequent generations, we give this neuron a premade weights array but no parent. The parent is then given afterward
+	public Neuron(float[] weights, int outputType) { //In subsequent generations, we give this neuron a premade weights array but no parent. The parent is then given afterward
 		this.weights = weights;
 		numInputs = weights.Length - 1;
 		this.outputType = outputType;
 	}
 
-	public void SetParent(NeuralNetwork2 parent) { //The parent is set under NeuralNetwork2's constructor when given a Neuron2[]
+	public void SetParent(NeuralNetwork parent) { //The parent is set under NeuralNetwork2's constructor when given a Neuron2[]
 		this.parent = parent;
 	}
 
@@ -59,17 +59,17 @@ public class Neuron2 {
 	public void CopyWeights(float[] weights, int startIndex, int length) { //Given an array, copies this Neuron's weights from the start to end index
 		for (int i = 0; i < length; i++) {
 			weights [startIndex + i] = this.weights [startIndex + i];
-			if (Random.value>NeuralNetwork2.MUTATION_CHANCE){
-				weights [startIndex + i] += (Random.value * 2 - 1)/2;
+			if (Random.value > NeuralNetwork.MUTATION_CHANCE) {
+				weights [startIndex + i] += (Random.value * 2 - 1) / 2;
 			}
 		}
 	}
 
-	public override string ToString(){
-		string s="{";
+	public override string ToString() {
+		string s = "{";
 		for (int i = 0; i < weights.Length; i++) {
-			s+=Mathf.Round(weights[i]*10)/10+",";
+			s += Mathf.Round(weights [i] * 10) / 10 + ",";
 		}
-		return s+"}";
+		return s + "}";
 	}
 }

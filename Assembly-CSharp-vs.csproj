@@ -46,14 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\New\FrogMove2.cs" />
-     <Compile Include="Assets\New\NeuralNetwork2.cs" />
-     <Compile Include="Assets\New\Neuron2.cs" />
-     <Compile Include="Assets\New\Room_Control.cs" />
-     <Compile Include="Assets\Old\FrogMove.cs" />
-     <Compile Include="Assets\Old\GameControl.cs" />
-     <Compile Include="Assets\Old\NeuralNetwork.cs" />
-     <Compile Include="Assets\Old\Neuron.cs" />
+     <Compile Include="Assets\FrogMove.cs" />
+     <Compile Include="Assets\NeuralNetwork.cs" />
+     <Compile Include="Assets\Neuron.cs" />
+     <Compile Include="Assets\OptionControl.cs" />
+     <Compile Include="Assets\RoomControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
