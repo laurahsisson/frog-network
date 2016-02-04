@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: d21f9f6e4551b4563b664f33edbb8d80
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - parent: {instanceID: 0}
+  - frogPrefab: {fileID: 100000, guid: a5d3e55d2346b4c649260066da7ba4f0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

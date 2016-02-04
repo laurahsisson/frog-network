@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/New/FrogMove2.cs">
+    <Files>
+      <File FileName="Assets/New/NeuralNetwork2.cs" Line="3" Column="1" />
+      <File FileName="Assets/New/Room_Control.cs" Line="15" Column="19" />
+      <File FileName="Assets/Old/Neuron.cs" Line="50" Column="15" />
+      <File FileName="Assets/New/FrogMove2.cs" Line="98" Column="58" />
+      <File FileName="Assets/Old/NeuralNetwork.cs" Line="39" Column="40" />
+      <File FileName="Assets/Old/GameControl.cs" Line="22" Column="4" />
+      <File FileName="Assets/New/Neuron2.cs" Line="68" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="New" expanded="True">
+              <Node name="FrogMove2.cs" selected="True" />
+            </Node>
+            <Node name="Old" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>//xForce.GetSignal(getHidden());</Value>
+          <Value>//yForce.GetSignal(getHidden());</Value>
+          <Value> //nn.getXForce();</Value>
+          <Value>//nn.getYForce();</Value>
+          <Value>//Mathf.Atan2(y,x)*Mathf.Rad2Deg;</Value>
+          <Value>1 / (1 + Mathf.Exp(value)) + .5f;</Value>
+          <Value>value</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
